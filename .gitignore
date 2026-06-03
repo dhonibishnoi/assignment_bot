@@ -1,0 +1,6 @@
+﻿pycache/
+__pycache__/
+*.pyc
+.env
+assignment_bot.db
+storage/screenshots/
