@@ -28,6 +28,7 @@ async def expiry_loop():
 async def main():
     await db.connect()
     bot = Bot(token=BOT_TOKEN)
+    await bot.delete_webhook(drop_pending_updates=True)
     dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(start.router)
     dp.include_router(free.router)
